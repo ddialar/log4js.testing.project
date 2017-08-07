@@ -1,0 +1,37 @@
+{
+  "name": "log4js.testing.project",
+  "version": "1.0.0",
+  "description": "Código de prueba para analizar la configuración y funcionamiento de la librería Log4JS.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --watch src --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddialar/log4js.testing.project.git"
+  },
+  "keywords": [
+    "Javascript",
+    "NodeJS",
+    "Express",
+    "Log4JS",
+    "logging"
+  ],
+  "author": "Dailos Rafael Díaz Lara <ddialar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddialar/log4js.testing.project/issues"
+  },
+  "homepage": "https://github.com/ddialar/log4js.testing.project#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "log4js": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.4.0",
+    "nodemon": "^1.11.0"
+  }
+}
