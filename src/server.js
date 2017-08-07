@@ -1,3 +1,6 @@
+import log4js from 'log4js';
+var logger = log4js.getLogger('server.js');
+
 import { serverConf } from './config';
 
 import express from 'express';
@@ -18,6 +21,7 @@ app.post(
 app.listen(
     serverConf.port,
     () => {
-        console.log(`Server running on port ${serverConf.port} ...`);
+        logger.info(`Server running on port ${serverConf.port} ...`);
+        // console.log(`Server running on port ${serverConf.port} ...`);
     }
 );
